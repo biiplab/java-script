@@ -37,7 +37,7 @@ console.log(Math);
 
 
 
-// console.log(Math.random());  // 0 and 1 value
+// console.log(Math.random());  // 0 and 1 value 
 // console.log(Math.random()*10);  // zero will come
 // console.log(Math.floor(Math.random()*10)+1);  // now zero will not come
               // Math.floor -- gives the round figure
