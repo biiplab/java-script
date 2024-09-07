@@ -79,5 +79,5 @@ console.log(userTwo.email);
 
 
 
-// Stack -- we get the Copy , so it will not change 
-// Heap -- we get the Original value, so it will change
+// Stack -- we get the Copy , so original value will not change 
+// Heap -- we get the Original value, so original value will change
