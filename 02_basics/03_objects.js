@@ -1,6 +1,6 @@
 // 2 ways to declare objects
       // Literal notation  :- not singleton
-      // Constructor notation :- songleton    object.create
+      // Constructor notation :- singleton    object.create
 
 //  Object Literals
 
