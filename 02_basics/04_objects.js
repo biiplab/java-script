@@ -22,9 +22,42 @@ const regularUser = {
 
 
 
-const obj1 = {1:"Biplab", 2:"Roy"}
-const obj2 = {1:"Toney", 2:"Stark"}
+// Merge/Combine :- Object
 
-// const obj3 = { obj1, obj2}
-const obj3 = Object.assign({}, obj1, obj2)
-console.log(obj3);
+const obj1 = {1:"Biplab", 2:"Roy"}          // 1 key : "biplab" value
+const obj2 = {3:"Toney", 4:"Stark"}
+
+// const obj3 = { obj1, obj2}   // problem :- object under object
+// const obj3 = Object.assign({}, obj1, obj2)    // combile multiple objects
+
+// Spread operator
+const obj3 = {...obj1, ...obj2}   // easy process to Combine multiple objects
+// console.log(obj3);
+
+
+
+// Use case:-  When values comes from database then
+const users = [
+  {
+    id: 1,
+    email: "firstemail@gmail.com"
+  },
+  {
+    id: 2,
+    email: "secondemail@gmail.com"
+  },
+  {
+    id: 3,
+    email: "thirdemail@gmail.com"
+  }
+]
+
+users[1].email
+
+console.log(tinderUser);
+
+console.log(Object.keys(tinderUser));  // in output Keys will come in array []
+console.log(Object.values(tinderUser));  // in output values will come in array []
+console.log(Object.entries(tinderUser));  // array within array
+
+console.log(tinderUser.hasOwnProperty('isLoggedIn'));  // 
