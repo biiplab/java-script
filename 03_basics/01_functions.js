@@ -48,5 +48,42 @@ function loginUserMessage(username){
 }
 
 // console.log(loginUserMessage("Biplab"))
-console.log(loginUserMessage())
+// console.log(loginUserMessage())
 
+
+
+
+// use case  Shopping cart
+function calculateCartPrice(...num1){
+      return num1
+}
+// console.log(calculateCartPrice(200, 300, 400));   // all the value wil come in a array so we can create loop
+
+
+const user = {
+  username: "Biplab",
+  price: 999
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+    
+}
+
+// handleObject(user)
+handleObject({
+  username: "Toney",
+  price: 599
+})
+
+
+
+
+const myNewArray = [ 300, 400, 500, 600]
+
+function returnSecondValue(getArray){
+  return getArray[2]
+}
+
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200, 600, 100, 400]));
