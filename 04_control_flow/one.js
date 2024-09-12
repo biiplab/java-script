@@ -68,3 +68,6 @@ if (loggedInFromGoogle || loggedInFromEmail){
   console.log("User logged in");
 }
 
+
+//  && (logical and) => both are  true  -- than execute
+//  || (logical not) => any one is true -- than execute
