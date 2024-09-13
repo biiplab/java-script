@@ -23,10 +23,31 @@
 </html>
 
 
-<!-- 1.innerHTML: returns all html nodes 
-     2.textContent : returns all text content
-     3.innerText : gives the text in the selected node
-     4.querySelector 
-     5.querySelectorAll
-     6.getAttribute
-     7.setAttribute        -->
+<!-- 
+DOM (Document Object Model) Quick Notes:
+
+1. HTML as a Tree Structure:
+   - The document is structured as a tree of nodes (elements, attributes, text).
+   - Root node: `document`.
+
+2. Selecting Elements:
+   - `document.getElementById('id')`: Select by ID.
+   - `document.getElementsByClassName('class')`: Select by class.
+   - `document.getElementsByTagName('tag')`: Select by tag name.
+   - `document.querySelector('selector')`: Select first element matching CSS selector.
+   - `document.querySelectorAll('selector')`: Select all elements matching CSS selector.
+
+3. Manipulating Elements:
+   - Change content: `element.textContent = 'New Content';`
+   - Change attributes: `element.setAttribute('name', 'value');`
+   - Change styles: `element.style.property = 'value';`
+
+4. Creating & Removing Elements:
+   - Create: `document.createElement('tag');`
+   - Append: `parentElement.appendChild(newElement);`
+   - Remove: `element.remove();`
+
+5. Event Handling:
+   - `element.addEventListener('event', function() { ... });`
+   - Example: `button.addEventListener('click', function() { alert('Clicked!'); });`
+-->
