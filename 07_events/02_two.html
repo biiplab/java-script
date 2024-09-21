@@ -9,15 +9,19 @@
     <h1>Hello</h1>
     <button id="stop">Stop</button>
 </body>
-  <script>
-    const sayBiplab = function(){
-          console.log("biplab");
-        }
-        const changeText = function(){
-          document.querySelector('h1').innerHTML = "Change HTML"
-        }
-        setTimeout(changeText, 2000)
 
-        
-  </script>
+    <script>
+      const changeText = function(){
+        document.querySelector('h1').innerHTML = "This is after change"
+      }
+
+       const changeMe = setTimeout(changeText,2000)
+
+        document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log(("STOPED"));
+       })
+
+    </script>
+
 </html>
