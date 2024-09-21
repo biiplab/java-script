@@ -11,17 +11,21 @@
 </body>
 
     <script>
-      const changeText = function(){
-        document.querySelector('h1').innerHTML = "This is after change"
-      }
 
-       const changeMe = setTimeout(changeText,2000)
+const sayBiplab = function(){
+        console.log("Biplab");
+    }
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "Text After Change"
+    }
 
-        document.querySelector('#stop').addEventListener('click', function(){
+    const changeMe = setTimeout(changeText, 2000)
+
+    document.querySelector('#stop').addEventListener('click', function(){
         clearTimeout(changeMe)
-        console.log(("STOPED"));
-       })
-
+        console.log("STOPPED")
+    })
+    
     </script>
 
 </html>
