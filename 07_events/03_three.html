@@ -13,18 +13,22 @@
 
     <script>
 
-      const sayDate = function(){
-        console.log("Biplab", Date.now());
+      const sayName = function(){
+        console.log("Hello", Date.now());
+        
       }
 
-      document.querySelector('#start').addEventListener('click', function(){
+      let intervalId;
+
+      document.getElementById('start').addEventListener('click', function(){
         console.log("STARTED");
-        
-        const intervalId = setInterval(sayDate,1000)
+        intervalId = setInterval(sayName,1000)
       })
 
-      
-
+      document.getElementById('stop').addEventListener('click', function(){
+        console.log("STOPED");
+        clearInterval(intervalId)       
+      })
        
     </script>
 
