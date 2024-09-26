@@ -1,14 +1,17 @@
-const promiseOne = new Promise(function(resolve, reject){
-  setTimeout(function(){
-    console.log('Async task is complete');
-    resolve()
-  },1000)
-})
 
-promiseOne.then(function(){
-  console.log('Promise consumed');
-  
-})
+// Creating a new Promise object
+const promiseOne = new Promise(function(resolve, reject) {
+  // Simulating an asynchronous task with setTimeout
+  setTimeout(function() {
+    console.log('Async task is complete'); // Log when the async task is complete
+    resolve(); // Resolve the promise indicating the task is done
+  }, 1000); // Task will complete after 1 second (1000 ms)
+});
+
+// Consuming the promise using the 'then' method
+promiseOne.then(function() {
+  console.log('Promise consumed'); // Log when the promise is successfully resolved
+});
 
 
 new Promise(function(resolve, reject){
@@ -61,3 +64,27 @@ promiseFour
   console.log(error); // If the promise is rejected, it prints the error message
 })
 .finally(() => console.log("The promise is either resolved or rejected"));
+
+
+
+const promiseFive = new Promise(function(resolve, reject){
+  setTimeout(function(){
+    let error = true
+    if (!error){
+      resolve({username: "Roney", password: "123456"})
+    }else{
+      reject('ERROR: Something went wrong')
+    }
+  },1000)
+})
+
+async function consumePromiseFive(){
+  try {
+    const response = await promiseFive
+  console.log(response);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+consumePromiseFive()
